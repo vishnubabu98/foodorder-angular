@@ -6,38 +6,38 @@
                 <h2 style="color: rgb(145, 21, 240);">User Registeration</h2>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="Name"[(ngModel)]="Name" type="text" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Address</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea name="Address"[(ngModel)]="Address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label">Pincode</label>
-                    <input type="text" class="form-control">
+                    <input name="Pincode"[(ngModel)]="Pincode" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label">E-mail id</label>
-                    <input type="text" class="form-control">
+                    <input name="Emailid"[(ngModel)]="Emailid" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input name="Phoneno"[(ngModel)]="Phoneno"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">Username</label>
-                    <input type="text" class="form-control">
+                    <input name="Username"[(ngModel)]="Username"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="Password"[(ngModel)]="Password"  type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">Confirm Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="Confirmpassword"[(ngModel)]="Confirmpassword"  type="password" name="" id="" class="form-control">
                 </div>
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Register</button>
+                    <button (click)="readValues()" class="btn btn-primary" type="button">Register</button>
                   </div>
             </div>
         </div>

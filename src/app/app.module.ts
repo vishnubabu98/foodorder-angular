@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -41,7 +42,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
